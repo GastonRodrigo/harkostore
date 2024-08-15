@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Productos from './pages/Productos';
 import Carrito from './pages/Carrito';
+import Footer from './components/Footer';
 
 const productos = [
   { id: 1, nombre: 'Camiseta Hombre', categoria: 'remeras', subcategoria: 'hombre', talle: 'M', precio: 20, imagen: '/images/camiseta-hombre.jpg' },
@@ -62,9 +63,10 @@ function App() {
 
   return (
     <Router>
-      <NavBar />
-      <ToastContainer />
-      <div className="pt-16">
+      <div className="flex flex-col min-h-screen">
+        <NavBar />
+        <ToastContainer />
+        <div className="flex-grow pt-16">
         <Routes>
           <Route path="/" element={<Home agregarAlCarrito={agregarAlCarrito}/>} />
           <Route 
@@ -96,6 +98,8 @@ function App() {
             />} 
           />
         </Routes>
+      </div>
+      <Footer />
       </div>
     </Router>
   );
