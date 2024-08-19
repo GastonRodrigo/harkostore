@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +17,121 @@
   color: #61dafb;
 }
 
+nav {
+  position: relative;
+  z-index: 100; /* Asegura que el navbar esté encima del contenido */
+}
+
+.center {
+  position: relative;
+  z-index: 1; /* Permite que el contenido pase detrás del navbar */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Estilos adicionales para la animación del menú */
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
+
+nav .flex-col {
+  animation: slideIn 0.3s ease-in-out forwards;
+}
+
+nav .hidden {
+  animation: slideOut 0.3s ease-in-out forwards;
+}
+
+/* Posicionar el ícono del menú en la derecha */
+button {
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  z-index: 200; /* Asegura que el botón esté sobre otros elementos */
+}
+
+/* Estilo para el fondo transparente al abrir el menú */
+.fixed.inset-0 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Asegura que el logo se muestre correctamente */
+nav img {
+  max-height: 40px;
+}
+
+/* Estilo del menú desplegable en dispositivos móviles */
+nav .flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 0;
+  }
+  
+  nav .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  nav .flex-col {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    display: none; /* Escondido por defecto */
+    background-color: white;
+    padding: 10px 0;
+  }
+  
+  nav .flex-col.block {
+    display: flex; /* Muestra el menú cuando está activo */
+  }
+  
+  nav .flex-col.hidden {
+    display: none;
   }
 }

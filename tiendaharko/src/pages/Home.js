@@ -12,10 +12,24 @@ const productosDestacados = [
 
 export default function Home({ agregarAlCarrito }) {
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <div className="container mx-auto p-8">
-        <h2 className="text-3xl font-bold mb-4 text-center">Productos Destacados</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-red-100 via-blue-100 to-white">
+      {/* Banner */}
+      <div className="relative h-64 bg-gray-800 text-white flex items-center justify-center">
+        <img 
+          src="/images/banner.png" 
+          alt="Banner" 
+          className="absolute inset-0 object-cover w-full h-full opacity-50" 
+        />
+        <div className="absolute  items-center justify-center text-center text-blur z-0 p-4">
+          <h1 className="text-4xl font-bold mb-2">Bienvenidos a Nuestra Tienda</h1>
+          <p className="text-xl">Explora nuestros productos destacados</p>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="flex-grow p-8">
+        <h2 className="text-3xl font-bold mb-4 text-center"> </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {productosDestacados.map(producto => (
             <ProductCard 
               key={producto.id} 
