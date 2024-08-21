@@ -3,8 +3,8 @@ import ProductCard from '../components/ProductCard';
 
 const productosDestacados = [
   { id: 1, nombre: 'Camiseta Hombre', categoria: 'Hombre', talle: 'M', precio: 20, imagen: '/images/camiseta-hombre.jpg' },
-  { id: 2, nombre: 'Vestido Mujer', categoria: 'Mujer', talle: 'M', precio: 45, imagen: '/images/vestido-mujer.jpg' },
-  { id: 3, nombre: 'Blusa Mujer', categoria: 'Mujer', talle: 'S', precio: 30, imagen: '/images/blusa-mujer.jpg' },
+  { id: 3, nombre: 'Chinatown', categoria: 'over', subcategoria: 'hombre', talles: ['M'], precio: 45, imagen: '/images/chineover.bmp' },
+  { id: 4, nombre: 'Mistral Over Blue', categoria: 'over', subcategoria: 'hombre', talles: ['S'], precio: 30, imagen: '/images/overmistral.bmp' },
   { id: 4, nombre: 'Buzo Hombre', categoria: 'Hombre', talle: 'M', precio: 50, imagen: '/images/buzo-hombre.jpg' },
   { id: 5, nombre: 'Camiseta Estampada Hombre', categoria: 'Hombre', talle: 'S', precio: 25, imagen: '/images/camiseta-estampada-hombre.jpg' },
   { id: 6, nombre: 'T-Shirt Mujer', categoria: 'Mujer', talle: 'L', precio: 28, imagen: '/images/tshirt-mujer.jpg' },

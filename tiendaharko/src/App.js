@@ -13,16 +13,16 @@ import ProductDetail from './pages/ProductDetail';
 const productos = [
   { id: 1, nombre: 'Camiseta Hombre', categoria: 'remeras', subcategoria: 'hombre', talles: ['S', 'M', 'L'], precio: 20, imagen: '/images/camiseta-hombre.jpg' },
   { id: 2, nombre: 'Camisa Hombre', categoria: 'remeras', subcategoria: 'hombre', talles: ['M', 'L'], precio: 35, imagen: '/images/camisa-hombre.jpg' },
-  { id: 3, nombre: 'Vestido Mujer', categoria: 'remeras', subcategoria: 'mujer', talles: ['M'], precio: 45, imagen: '/images/vestido-mujer.jpg' },
-  { id: 4, nombre: 'Blusa Mujer', categoria: 'remeras', subcategoria: 'mujer', talles: ['S'], precio: 30, imagen: '/images/blusa-mujer.jpg' },
+  { id: 3, nombre: 'Chinatown', categoria: 'over', subcategoria: 'hombre', talles: ['M'], precio: 45, imagen: '/images/chineover.bmp' },
+  { id: 4, nombre: 'Mistral Over Blue', categoria: 'over', subcategoria: 'hombre', talles: ['S'], precio: 30, imagen: '/images/overmistral.bmp' },
   { id: 5, nombre: 'Buzo Hombre', categoria: 'buzos', subcategoria: 'hombre', talles: ['M'], precio: 50, imagen: '/images/buzo-hombre.jpg' },
-  { id: 6, nombre: 'Buzo Mujer', categoria: 'buzos', subcategoria: 'mujer', talles: ['S'], precio: 55, imagen: '/images/buzo-mujer.jpg' },
+  { id: 6, nombre: 'Pantalon fachero facherito', categoria: 'pantalones', subcategoria: 'hombre', talles: ['S'], precio: 55, imagen: '/images/buzo-mujer.jpg' },
   { id: 7, nombre: 'Sudadera Hombre', categoria: 'buzos', subcategoria: 'hombre', talles: ['L'], precio: 60, imagen: '/images/sudadera-hombre.jpg' },
-  { id: 8, nombre: 'Sudadera Mujer', categoria: 'buzos', subcategoria: 'mujer', talles: ['M'], precio: 65, imagen: '/images/sudadera-mujer.jpg' },
+  { id: 8, nombre: 'Pantalon para pies', categoria: 'pantalones', subcategoria: 'hombre', talles: ['M'], precio: 65, imagen: '/images/sudadera-mujer.jpg' },
   { id: 9, nombre: 'Camiseta Estampada Hombre', categoria: 'remeras', subcategoria: 'hombre', talles: ['S'], precio: 25, imagen: '/images/camiseta-estampada-hombre.jpg' },
-  { id: 10, nombre: 'T-Shirt Mujer', categoria: 'remeras', subcategoria: 'mujer', talles: ['L'], precio: 28, imagen: '/images/tshirt-mujer.jpg' },
+  { id: 10, nombre: 'T-Shirt Mujer', categoria: 'over', subcategoria: 'hombre', talles: ['L'], precio: 28, imagen: '/images/tshirt-mujer.jpg' },
   { id: 11, nombre: 'Canguro Hombre', categoria: 'buzos', subcategoria: 'hombre', talles: ['XL'], precio: 70, imagen: '/images/canguro-hombre.jpg' },
-  { id: 12, nombre: 'Canguro Mujer', categoria: 'buzos', subcategoria: 'mujer', talles: ['M'], precio: 75, imagen: '/images/canguro-mujer.jpg' },
+  { id: 12, nombre: 'Canguro Mujer', categoria: 'pantalones', subcategoria: 'hombre', talles: ['M'], precio: 75, imagen: '/images/canguro-mujer.jpg' },
 ];
 
 function App() {
@@ -80,16 +80,16 @@ function App() {
               element={<Productos productos={productos.filter(p => p.categoria === 'remeras' && p.subcategoria === 'hombre')} agregarAlCarrito={agregarAlCarrito} />}
             />
             <Route
-              path="/productos/remeras/mujer"
-              element={<Productos productos={productos.filter(p => p.categoria === 'remeras' && p.subcategoria === 'mujer')} agregarAlCarrito={agregarAlCarrito} />}
+              path="/productos/over/hombre"
+              element={<Productos productos={productos.filter(p => p.categoria === 'over' && p.subcategoria === 'hombre')} agregarAlCarrito={agregarAlCarrito} />}
             />
             <Route
               path="/productos/buzos/hombre"
               element={<Productos productos={productos.filter(p => p.categoria === 'buzos' && p.subcategoria === 'hombre')} agregarAlCarrito={agregarAlCarrito} />}
             />
             <Route
-              path="/productos/buzos/mujer"
-              element={<Productos productos={productos.filter(p => p.categoria === 'buzos' && p.subcategoria === 'mujer')} agregarAlCarrito={agregarAlCarrito} />}
+              path="/productos/pantalones/hombre"
+              element={<Productos productos={productos.filter(p => p.categoria === 'pantalones' && p.subcategoria === 'hombre')} agregarAlCarrito={agregarAlCarrito} />}
             />
             <Route
               path="/carrito"

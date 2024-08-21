@@ -26,7 +26,7 @@ export default function NavBar() {
 
         {/* Texto del logo */}
         <Link to="/" className={`transition-all duration-300 ${isOpen ? 'opacity-0 invisible' : 'opacity-100 visible'} ml-2`}>
-          <span className="text-2xl font-extrabold hover:text-blue-600 transition duration-300">BELGRADE Store</span>
+          <span className="text-3xl font-extrabold hover:text-blue-600 transition duration-300">BELGRADE</span>
         </Link>
 
         <button 
@@ -37,19 +37,19 @@ export default function NavBar() {
         </button>
         <div className={`flex-col md:flex-row md:space-x-4 flex items-center w-full md:w-auto transition-all duration-300 ease-in-out ${isOpen ? 'flex' : 'hidden'} md:flex`}>
           <Link to="/productos/remeras/hombre" className="relative group block md:inline-block">
-            Remeras Hombre
+            Remeras SlimFit
+            <span className="block h-0.5 bg-black group-hover:w-full transition-all duration-300 ease-in-out w-0"></span>
+          </Link>
+          <Link to="/productos/over/hombre" className="relative group block md:inline-block">
+            Remeras Oversize
             <span className="block h-0.5 bg-black group-hover:w-full transition-all duration-300 ease-in-out w-0"></span>
           </Link>
           <Link to="/productos/buzos/hombre" className="relative group block md:inline-block">
-            Buzos Hombre
+            Buzos
             <span className="block h-0.5 bg-black group-hover:w-full transition-all duration-300 ease-in-out w-0"></span>
           </Link>
-          <Link to="/productos/remeras/mujer" className="relative group block md:inline-block">
-            Remeras Mujer
-            <span className="block h-0.5 bg-black group-hover:w-full transition-all duration-300 ease-in-out w-0"></span>
-          </Link>
-          <Link to="/productos/buzos/mujer" className="relative group block md:inline-block">
-            Buzos Mujer
+          <Link to="/productos/pantalones/hombre" className="relative group block md:inline-block">
+            Pantalones
             <span className="block h-0.5 bg-black group-hover:w-full transition-all duration-300 ease-in-out w-0"></span>
           </Link>
           <Link to="/carrito" className="hover:text-red-600 transition duration-300 flex items-center block md:inline-block">

@@ -16,8 +16,8 @@ export default function ProductDetail({ productos, agregarAlCarrito }) {
   };
 
   return (
-    <div className="container mx-auto p-4 bg-white rounded-lg shadow-lg mt-10">
-      <div className="flex flex-col md:flex-row">
+    <div className="container mx-auto p-10 bg-white rounded-lg shadow-lg mt-20">
+      <div className="flex flex-col md:flex-col">
         <img 
           src={producto.imagen} 
           alt={producto.nombre} 
