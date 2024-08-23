@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExpand } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
-export default function ProductCard({ producto, agregarAlCarrito }) {
+export default function ProductCard({ producto }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedTalle, setSelectedTalle] = useState(producto.talle);
   const navigate = useNavigate();
 
   const toggleModal = () => {
@@ -27,34 +24,14 @@ export default function ProductCard({ producto, agregarAlCarrito }) {
         />
       </div>
       <h2 className="text-xl font-semibold">{producto.nombre}</h2>
-      <p className="text-gray-700">Talle: 
-        <select 
-          value={selectedTalle} 
-          onChange={(e) => setSelectedTalle(e.target.value)} 
-          className="ml-2 border rounded p-1"
-        >
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-        </select>
-      </p>
+      <p className="text-sm text-gray-600 mb-2">{producto.descripcion}</p> {/* Breve descripción */}
       <p className="text-lg font-bold">${producto.precio}</p>
-      <div className="flex justify-between items-center mt-4">
-        <button 
-          onClick={() => agregarAlCarrito({ ...producto, talle: selectedTalle })} 
-          className="bg-white text-black border border-black py-2 px-4 rounded hover:bg-black hover:text-white transition duration-300"
-        >
-          Agregar al Carrito
-        </button>
+      <div className="flex justify-center items-center mt-5">
         <button 
           onClick={handleViewMore} 
-          className="text-blue-600 hover:text-blue-800 transition duration-300"
+          className="bg-white text-black border border-black py-2 px-4 rounded hover:bg-black hover:text-white transition duration-300 w-full" // Botón ancho completo
         >
-          <FontAwesomeIcon 
-            icon={faExpand} 
-            className="text-2xl animate-pulse" 
-          />
+          Ver más
         </button>
       </div>
 

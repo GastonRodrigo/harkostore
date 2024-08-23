@@ -37,7 +37,7 @@ export default function NavBar() {
         </button>
         <div className={`flex-col md:flex-row md:space-x-4 flex items-center w-full md:w-auto transition-all duration-300 ease-in-out ${isOpen ? 'flex' : 'hidden'} md:flex`}>
           <Link to="/productos/remeras/hombre" className="relative group block md:inline-block">
-            Remeras SlimFit
+            Remeras
             <span className="block h-0.5 bg-black group-hover:w-full transition-all duration-300 ease-in-out w-0"></span>
           </Link>
           <Link to="/productos/over/hombre" className="relative group block md:inline-block">

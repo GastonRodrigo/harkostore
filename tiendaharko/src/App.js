@@ -11,18 +11,18 @@ import AdminDashboard from './pages/AdminDashboard';
 import ProductDetail from './pages/ProductDetail';
 
 const productos = [
-  { id: 1, nombre: 'Camiseta Hombre', categoria: 'remeras', subcategoria: 'hombre', talles: ['S', 'M', 'L'], precio: 20, imagen: '/images/camiseta-hombre.jpg' },
-  { id: 2, nombre: 'Camisa Hombre', categoria: 'remeras', subcategoria: 'hombre', talles: ['M', 'L'], precio: 35, imagen: '/images/camisa-hombre.jpg' },
-  { id: 3, nombre: 'Chinatown', categoria: 'over', subcategoria: 'hombre', talles: ['M'], precio: 45, imagen: '/images/chineover.bmp' },
-  { id: 4, nombre: 'Mistral Over Blue', categoria: 'over', subcategoria: 'hombre', talles: ['S'], precio: 30, imagen: '/images/overmistral.bmp' },
-  { id: 5, nombre: 'Buzo Hombre', categoria: 'buzos', subcategoria: 'hombre', talles: ['M'], precio: 50, imagen: '/images/buzo-hombre.jpg' },
-  { id: 6, nombre: 'Pantalon fachero facherito', categoria: 'pantalones', subcategoria: 'hombre', talles: ['S'], precio: 55, imagen: '/images/buzo-mujer.jpg' },
-  { id: 7, nombre: 'Sudadera Hombre', categoria: 'buzos', subcategoria: 'hombre', talles: ['L'], precio: 60, imagen: '/images/sudadera-hombre.jpg' },
-  { id: 8, nombre: 'Pantalon para pies', categoria: 'pantalones', subcategoria: 'hombre', talles: ['M'], precio: 65, imagen: '/images/sudadera-mujer.jpg' },
-  { id: 9, nombre: 'Camiseta Estampada Hombre', categoria: 'remeras', subcategoria: 'hombre', talles: ['S'], precio: 25, imagen: '/images/camiseta-estampada-hombre.jpg' },
-  { id: 10, nombre: 'T-Shirt Mujer', categoria: 'over', subcategoria: 'hombre', talles: ['L'], precio: 28, imagen: '/images/tshirt-mujer.jpg' },
-  { id: 11, nombre: 'Canguro Hombre', categoria: 'buzos', subcategoria: 'hombre', talles: ['XL'], precio: 70, imagen: '/images/canguro-hombre.jpg' },
-  { id: 12, nombre: 'Canguro Mujer', categoria: 'pantalones', subcategoria: 'hombre', talles: ['M'], precio: 75, imagen: '/images/canguro-mujer.jpg' },
+  { id: 1, nombre: 'Camiseta Hombre', categoria: 'remeras', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 12500, imagen: '/images/camiseta-hombre.jpg' },
+  { id: 2, nombre: 'Camisa Hombre', categoria: 'remeras', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 12500, imagen: '/images/camisa-hombre.jpg' },
+  { id: 3, nombre: 'Chinatown', categoria: 'over', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 17500, imagen: '/images/chineover.bmp' },
+  { id: 4, nombre: 'Mistral Over Blue', categoria: 'over', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 17500, imagen: '/images/overmistral.bmp' },
+  { id: 5, nombre: 'Buzo Hombre', categoria: 'buzos', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 35000, imagen: '/images/buzo-hombre.jpg' },
+  { id: 6, nombre: 'Pantalon fachero facherito', categoria: 'pantalones', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 35500, imagen: '/images/buzo-mujer.jpg' },
+  { id: 7, nombre: 'Sudadera Hombre', categoria: 'buzos', subcategoria: 'hombre', descripcion: 'agregar descripcion breve',  talles: ['S', 'M', 'L'], precio: 35000, imagen: '/images/sudadera-hombre.jpg' },
+  { id: 8, nombre: 'Pantalon para pies', categoria: 'pantalones', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 42000, imagen: '/images/sudadera-mujer.jpg' },
+  { id: 9, nombre: 'Camiseta Estampada Hombre', categoria: 'remeras', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 12500, imagen: '/images/camiseta-estampada-hombre.jpg' },
+  { id: 10, nombre: 'T-Shirt Mujer', categoria: 'over', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 17500, imagen: '/images/tshirt-mujer.jpg' },
+  { id: 11, nombre: 'Canguro Hombre', categoria: 'buzos', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 33000, imagen: '/images/canguro-hombre.jpg' },
+  { id: 12, nombre: 'Canguro Mujer', categoria: 'pantalones', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 42500, imagen: '/images/canguro-mujer.jpg' },
 ];
 
 function App() {

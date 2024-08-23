@@ -48,7 +48,6 @@ export default function Carrito({ carrito, actualizarCantidadProducto, eliminarP
                   <button 
                     onClick={() => actualizarCantidadProducto(item.id, item.talle, item.cantidad - 1)} 
                     className="bg-white text-black border border-black py-1 px-2 rounded hover:bg-black hover:text-white transition duration-300 text-sm"
-                    disabled={item.cantidad <= 1}
                   >
                     Eliminar 1 Unidad
                   </button>
