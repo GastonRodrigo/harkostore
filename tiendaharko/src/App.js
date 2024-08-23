@@ -64,7 +64,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gradient-to-r from-red-100 via-blue-100 to-white">
+      <div className="flex flex-col min-h-screen">
         <NavBar />
         <ToastContainer />
         <div className="flex-grow pt-16">

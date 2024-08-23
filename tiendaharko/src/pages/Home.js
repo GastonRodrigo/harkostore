@@ -12,7 +12,7 @@ const productosDestacados = [
 
 export default function Home({ agregarAlCarrito }) {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-red-100 via-blue-100 to-white">
+    <div className="flex flex-col min-h-screen">
       {/* Banner */}
       <div className="relative h-64 bg-gray-800 text-white flex items-center justify-center">
         <img 

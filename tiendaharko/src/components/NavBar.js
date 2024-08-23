@@ -52,7 +52,7 @@ export default function NavBar() {
             Pantalones
             <span className="block h-0.5 bg-black group-hover:w-full transition-all duration-300 ease-in-out w-0"></span>
           </Link>
-          <Link to="/carrito" className="hover:text-red-600 transition duration-300 flex items-center block md:inline-block">
+          <Link to="/carrito" className="hover:text-blue-600 transition duration-300 flex items-center block md:inline-block">
             <FaShoppingCart className="text-2xl" />
           </Link>
         </div>

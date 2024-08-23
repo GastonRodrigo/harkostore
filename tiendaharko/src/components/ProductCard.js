@@ -43,7 +43,7 @@ export default function ProductCard({ producto, agregarAlCarrito }) {
       <div className="flex justify-between items-center mt-4">
         <button 
           onClick={() => agregarAlCarrito({ ...producto, talle: selectedTalle })} 
-          className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300"
+          className="bg-white text-black border border-black py-2 px-4 rounded hover:bg-black hover:text-white transition duration-300"
         >
           Agregar al Carrito
         </button>

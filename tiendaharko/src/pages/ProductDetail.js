@@ -53,8 +53,8 @@ export default function ProductDetail({ productos, agregarAlCarrito }) {
           </div>
           <button 
             onClick={handleAgregarAlCarrito} 
-            className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition duration-300"
-          >
+            className="bg-white text-black border border-black py-2 px-4 rounded hover:bg-black hover:text-white transition duration-300"
+        >
             Agregar al Carrito
           </button>
         </div>

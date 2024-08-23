@@ -47,7 +47,7 @@ export default function Carrito({ carrito, actualizarCantidadProducto, eliminarP
                 <div className="flex space-x-2 mt-2">
                   <button 
                     onClick={() => actualizarCantidadProducto(item.id, item.talle, item.cantidad - 1)} 
-                    className="bg-blue-600 text-white py-1 px-2 rounded hover:bg-blue-700 transition duration-300 text-sm"
+                    className="bg-white text-black border border-black py-1 px-2 rounded hover:bg-black hover:text-white transition duration-300 text-sm"
                     disabled={item.cantidad <= 1}
                   >
                     Eliminar 1 Unidad
