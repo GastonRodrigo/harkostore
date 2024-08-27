@@ -1,54 +1,50 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export default function ProductCard({ producto }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
-
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
 
   const handleViewMore = () => {
     navigate(`/productos/${producto.id}`);
   };
 
   return (
-    <div className="relative border rounded-lg shadow-md p-4 transition-transform transform hover:scale-105 flex flex-col">
-      <div className="w-full h-48 mb-4 flex items-center justify-center overflow-hidden">
-        <img 
+    <motion.div 
+      className="relative border rounded-lg shadow-md overflow-hidden"
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.3 }}
+      onHoverStart={() => setIsHovered(true)}
+      onHoverEnd={() => setIsHovered(false)}
+    >
+      <div className="w-full h-64 relative overflow-hidden">
+        <motion.img 
           src={producto.imagen} 
           alt={producto.nombre} 
-          className="object-contain max-h-full max-w-full cursor-pointer" 
-          onClick={toggleModal}
+          className="object-cover w-full h-full cursor-pointer"
+          animate={{ scale: isHovered ? 1.1 : 1 }}
+          transition={{ duration: 0.3 }}
         />
-      </div>
-      <h2 className="text-xl font-semibold">{producto.nombre}</h2>
-      <p className="text-sm text-gray-600 mb-2">{producto.descripcion}</p> {/* Breve descripción */}
-      <p className="text-lg font-bold">${producto.precio}</p>
-      <div className="flex justify-center items-center mt-5">
-        <button 
-          onClick={handleViewMore} 
-          className="bg-white text-black border border-black py-2 px-4 rounded hover:bg-black hover:text-white transition duration-300 w-full" // Botón ancho completo
+        <motion.div 
+          className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isHovered ? 1 : 0 }}
+          transition={{ duration: 0.3 }}
         >
-          Ver más
-        </button>
+          <button 
+            onClick={handleViewMore}
+            className="bg-white text-black py-2 px-4 rounded hover:bg-black hover:text-white transition duration-300"
+          >
+            Ver más
+          </button>
+        </motion.div>
       </div>
-
-      {isModalOpen && (
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 transition-opacity duration-300"
-          onClick={toggleModal}
-        >
-          <div className="relative">
-            <img 
-              src={producto.imagen} 
-              alt={producto.nombre} 
-              className="max-w-full max-h-screen object-contain"
-            />
-          </div>
-        </div>
-      )}
-    </div>
+      <div className="p-4">
+        <h2 className="text-xl font-semibold mb-2">{producto.nombre}</h2>
+        <p className="text-sm text-gray-600 mb-2">{producto.descripcion}</p>
+        <p className="text-lg font-bold">${producto.precio}</p>
+      </div>
+    </motion.div>
   );
 }
