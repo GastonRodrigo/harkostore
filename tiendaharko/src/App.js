@@ -14,7 +14,7 @@ const productos = [
   { id: 1, nombre: 'Camiseta Hombre', categoria: 'remeras', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 12500, imagen: '/images/camiseta-hombre.jpg' },
   { id: 2, nombre: 'Camisa Hombre', categoria: 'remeras', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 12500, imagen: '/images/camisa-hombre.jpg' },
   { id: 3, nombre: 'Chinatown', categoria: 'over', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 17500, imagen: '/images/chineover.bmp' },
-  { id: 4, nombre: 'Mistral Over Blue', categoria: 'over', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 17500, imagen: '/images/overmistral.bmp' },
+  { id: 4, nombre: 'Mistral Over Blue', categoria: 'over', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L', 'XL', 'XXL'], precio: 17500, imagen: '/images/overmistral.bmp' },
   { id: 5, nombre: 'Buzo Hombre', categoria: 'buzos', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 35000, imagen: '/images/buzo-hombre.jpg' },
   { id: 6, nombre: 'Pantalon fachero facherito', categoria: 'pantalones', subcategoria: 'hombre', descripcion: 'agregar descripcion breve', talles: ['S', 'M', 'L'], precio: 35500, imagen: '/images/buzo-mujer.jpg' },
   { id: 7, nombre: 'Sudadera Hombre', categoria: 'buzos', subcategoria: 'hombre', descripcion: 'agregar descripcion breve',  talles: ['S', 'M', 'L'], precio: 35000, imagen: '/images/sudadera-hombre.jpg' },
