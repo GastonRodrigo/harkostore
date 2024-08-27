@@ -5,7 +5,7 @@ export default function ProductDetail({ productos, agregarAlCarrito }) {
   const { id } = useParams();
   const producto = productos.find(p => p.id === parseInt(id));
   const [talleSeleccionado, setTalleSeleccionado] = useState(producto.talles[0] || 'S');
-  const [cantidad, setCantidad] = useState(1);
+  const [cantidad] = useState(1);
 
   if (!producto) {
     return <div>Producto no encontrado.</div>;
