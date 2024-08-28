@@ -3,12 +3,12 @@ import ProductCard from '../components/ProductCard';
 import { motion } from 'framer-motion';
 
 const productosDestacados = [
-  { id: 1, nombre: 'Camiseta Hombre', categoria: 'Hombre', precio: 12000, imagen: '/images/camiseta-hombre.jpg' },
-  { id: 3, nombre: 'Chinatown', categoria: 'over', subcategoria: 'hombre', precio: 45, imagen: '/images/chineover.bmp' },
-  { id: 4, nombre: 'Mistral Over Blue', categoria: 'over', subcategoria: 'hombre', precio: 30, imagen: '/images/overmistral.bmp' },
-  { id: 5, nombre: 'Buzo Hombre', categoria: 'Hombre', precio: 50, imagen: '/images/buzo-hombre.jpg' },
-  { id: 9, nombre: 'Camiseta Estampada Hombre', categoria: 'Hombre', precio: 2500, imagen: '/images/camiseta-estampada-hombre.jpg' },
-  { id: 9, nombre: 'T-Shirt Mujer', categoria: 'Hombre', precio: 28, imagen: '/images/tshirt-mujer.jpg' },
+  { id: 1, nombre: 'Camiseta Hombre', categoria: 'Hombre', precio: 12500, imagen: '/images/camiseta-hombre.jpg' },
+  { id: 3, nombre: 'Chinatown', categoria: 'over', subcategoria: 'hombre', precio: 12500, imagen: '/images/chineover.bmp' },
+  { id: 4, nombre: 'Mistral Over Blue', categoria: 'over', subcategoria: 'hombre', precio: 13500, imagen: '/images/overmistral.bmp' },
+  { id: 5, nombre: 'Buzo Hombre', categoria: 'Hombre', precio: 35000, imagen: '/images/worse.jpg' },
+  { id: 9, nombre: 'Camiseta Estampada Hombre', categoria: 'Hombre', precio: 25000, imagen: '/images/camiseta-estampada-hombre.jpg' },
+  { id: 10, nombre: 'Serbia Strong', categoria: 'Hombre', precio: 13500, imagen: '/images/serbia-over.jpg' },
 ];
 
 export default function Home({ agregarAlCarrito }) {
